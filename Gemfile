@@ -77,5 +77,9 @@ group :development do
   gem 'fasterer'
   gem 'overcommit'
   gem 'rubocop'
+  gem 'rubocop-factory_bot'
+  gem 'rubocop-faker'
+  gem 'rubocop-performance', require: false
   gem 'rubocop-rails'
+  gem 'rubocop-rspec'
 end

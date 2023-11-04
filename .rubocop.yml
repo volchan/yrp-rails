@@ -1,5 +1,9 @@
 require:
+  - rubocop-faker
+  - rubocop-factory_bot
+  - rubocop-performance
   - rubocop-rails
+  - rubocop-rspec
 
 AllCops:
   NewCops: enable

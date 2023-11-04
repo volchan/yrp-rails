@@ -15,7 +15,18 @@
 #
 # Uncomment the following lines to make the configuration take effect.
 
+CommitMsg:
+  CapitalizedSubject:
+    enabled: false
+
 PreCommit:
+  BundleCheck:
+    enabled: true
+    on_warn: fail
+  BundleOutdated:
+    enabled: true
+    on_warn: fail
+
   Fasterer:
     enabled: true
     on_warn: fail
@@ -24,6 +35,14 @@ PreCommit:
     enabled: true
     on_warn: fail # Treat all warnings as failures
 
+PrePush:
+  Breakeman:
+    enabled: true
+    on_warn: fail
+
+  Rspec:
+    enabled: true
+    on_warn: fail
 #
 #PostCheckout:
 #  ALL: # Special hook name that customizes all hooks of this type
